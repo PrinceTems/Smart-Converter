@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my first calculator web page</title>
+    <script src="my converter javascript code.js"></script>
+</head>
+<body>
+
+    <link rel="stylesheet" href="my converter css.css">
+
+
+    <div id="navbar-kilotomile">
+         <label  onclick="converttomiles()" class="km">Kilometer To Miles</label>
+    </div>
+
+    <div id="navbar-metertoinch">
+        <label  onclick="converttoinch()" class="mi">Meter To Inches</label>
+    </div>
+
+    <div id="navbarfeettoyards">
+        <label  onclick="converttoyards()" class="fy">Feet To Yards</label>
+    </div>
+
+    <div id="navbar-fartocell">    
+      <label  onclick="converttocelcious()" class="fc">Fahrenheit To Celsius</label>
+  </div> 
+
+
+    <h1>The Smart Converter</h1>
+
+
+    <div id="h2-container">
+      <h2>Convert From Miles To Kilometer</h2>
+        <div id="container1">
+           <p id="miles">Miles</p><input id="Miles" placeholder="Miles to Kilometer">
+          
+        </div>
+   </div>
+
+     <div id="miltokilo-container">
+         <p id="kilo">Kilometer</p>
+         <label id="milestokilometer"></label>
+          <button id="btnkilo" onclick="convertmiletokilo()">Convert To Kilometer</button>
+     </div>
+
+
+     
+   
+     <div id="h3-container">
+       <h3>Convert From Kilometer To Miles</h3>
+         <div id="container2">
+            <p id="kil">Kilometer</p><input id="Kilometer" placeholder="Kilometer to miles">
+          
+        </div>
+    </div> 
+    
+<div id="kilotomile-container">
+     <p id="mile">Miles</p>
+     <label id="kilometertomiles"></label>
+     <button id="btnmile"onclick="convertkilotomile()">Convert To Miles</button>
+</div> 
+
+
+
+
+</body>
