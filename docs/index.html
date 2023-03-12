@@ -10,31 +10,61 @@
 
     <link rel="stylesheet" href="my converter css.css">
 
+    <div id="nav">
+      
+      <div id="navbar-kilotomile">
+        <label  onclick="converttomiles()" 
+           class="km">Kilometer To Miles
+        </label>
+      </div>
 
-    <div id="navbar-kilotomile">
-         <label  onclick="converttomiles()" class="km">Kilometer To Miles</label>
+
+      <div id="navbar-metertoinch">
+       <label  onclick="converttoinch()" 
+         class="mi">Meter To Inches
+       </label>
+      </div>
+
+
+      <div id="navbarfeettoyards">
+         <label  onclick="converttoyards()" 
+           class="fy">Feet To Yards
+         </label>
+      </div>
+
+       <div id="navbar-fartocell">    
+         <label  onclick="converttocelcious()" 
+           class="fc">Fahrenheit To Celsius
+         </label>
+       </div>
+
+
     </div>
+    
+    
+    
 
-    <div id="navbar-metertoinch">
-        <label  onclick="converttoinch()" class="mi">Meter To Inches</label>
-    </div>
+    
+    
+    
 
-    <div id="navbarfeettoyards">
-        <label  onclick="converttoyards()" class="fy">Feet To Yards</label>
-    </div>
+    
+    
+    
 
-    <div id="navbar-fartocell">    
-      <label  onclick="converttocelcious()" class="fc">Fahrenheit To Celsius</label>
-  </div> 
+    
+    
+  
 
 
     <h1>The Smart Converter</h1>
 
-
+  <div id="big-container1">
     <div id="h2-container">
       <h2>Convert From Miles To Kilometer</h2>
         <div id="container1">
-           <p id="miles">Miles</p><input id="Miles" placeholder="Miles to Kilometer">
+           <p id="miles">Miles</p>
+           <input id="Miles" placeholder="Miles to Kilometer">
           
         </div>
    </div>
@@ -45,22 +75,27 @@
           <button id="btnkilo" onclick="convertmiletokilo()">Convert To Kilometer</button>
      </div>
 
-
+  </div>
+  
      
-   
-     <div id="h3-container">
-       <h3>Convert From Kilometer To Miles</h3>
-         <div id="container2">
-            <p id="kil">Kilometer</p><input id="Kilometer" placeholder="Kilometer to miles">
+  <div id="big-container2">
+      <div id="h3-container">
+          <h3>Convert From Kilometer To Miles</h3>
+            <div id="container2">
+              <p id="kil">Kilometer</p>
+              <input id="Kilometer" placeholder="Kilometer to miles">
           
-        </div>
+            </div>
+
     </div> 
-    
-<div id="kilotomile-container">
+      
+   <div id="kilotomile-container">
      <p id="mile">Miles</p>
      <label id="kilometertomiles"></label>
      <button id="btnmile"onclick="convertkilotomile()">Convert To Miles</button>
-</div> 
+   </div> 
+
+  </div>
 
 
 

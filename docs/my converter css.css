@@ -1,19 +1,52 @@
+
+
+
+
+
 body{
-    display:block;
-    padding-top: 20px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    widows: initial;
+    max-width: 100%;
+    max-height: 100px;
     
 
 }
 
+@media screen {
+    body{
+        min-width: 20%;
+        min-height: 55px;
+    
+
+    }
+}
+h2{
+    text-align: center;
+    justify-content: center;
+}
+
+
+#nav{
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
 h1{
+    
+    display: block;
     color: rgb(123, 167, 179);
     margin-right: 70px;
+    margin-bottom: 30px;
     margin-left: 70px;
+    justify-content: center;
     text-align: center;
     text-transform: capitalize;
     text-decoration: aliceblue;
-    text-overflow: none;
-    font-size: 80px;
+    text-overflow: initial;
+    font-size: 5vw;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-variant-numeric: ordinal;
     box-shadow: 0 0 5px rgb(80, 77, 73);
@@ -21,27 +54,53 @@ h1{
 
 #h2-container{
     display: block;
-    float: left;
-    margin-left: 70px;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.1vw;
+    margin-left: 7px;
     padding-left: none;
     padding-right: none;
     margin-right: none;
-    padding-top: 4px;
-    border:none;
-    width: 57vh;
-    position: relative;
+    padding-top: 40px;
+    width: 400px;
     color: rgb(147, 188, 35);
+}
+
+@media screen {
+
+    #h2-container{
+        margin-left: 40vh;
+        margin-right: 30px;
+        margin-top: 90px;
+    
+    } 
+    
+    
+}
+
+#big-container1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 1vmin;
+}
+
+#big-container2{
+    display: flex;
+    margin-top: 70px;
+    margin-left: 40px;
+    justify-content: center;
+    text-align: center;
 }
 
 #Miles{
     display: block;
     height: 5vh;
     text-align: center;
-    font-size: 15px;
+    font-size: 2vw;
     font-weight: bold;
     border: none;
     margin-bottom:23px ;
-    position: relative;
     box-shadow: 0 0 10px  rgb(14, 15, 14);
     outline: none;
     cursor: pointer;
@@ -53,8 +112,8 @@ h1{
     display: block;
     height: 5vh;
     text-align: center;
-    font-size: 15px;
-    font-weight: bold;
+    justify-content: center;
+    font-size: 2vw;
     margin-bottom: 23px;
     border: none;
     box-shadow: 0 0 10px rgb(15, 15, 14);
@@ -63,27 +122,49 @@ h1{
     
 }
 
-#h3-container{
+h3{
     display: block;
     float: right;
-    margin-right: 70px;
+    text-align: right;
+    justify-content: right;
+}
+
+#h3-container{
+    display: block;
+    font-size: 1.4vw;
+    justify-content: center;
+    text-align: center;
+    margin-right: 55px;
     padding-top: 4px;
     padding-left: none;
     padding-right: none;
     margin-right: none;
     margin-bottom: 12px;
-    border:none;
-    width: 57vh;
-    font-size: 19px ;
+    margin-left: 30px;
     color: rgb(235, 126, 43);
 }
 
+@media screen {
+    #h3-container{
+        margin-left: 50px;
+    }
+}
+
+@media screen {
+    #h2{
+        display: flex;
+        margin-left: 80px;
+        text-align: center;
+        justify-content: center;
+    }
+}
 
 
 
 #container1{
     display: block;
     text-align: center;
+    justify-content: center;
     margin-left: none;
     padding-left: none;
     background-color: aqua;
@@ -92,26 +173,46 @@ h1{
     padding-bottom: 4px;
     padding-right: 3px;
     padding-left: 3px;
-    margin-top: 83px;
-    margin-left: 9px;
-    font-size: 19px;
+    margin-top: 10px;
+    margin-right:2px ;
+    font-size: 3vw;
     color:rgb(65, 13, 109);
 
+}
+
+@media screen {
+    #container1{
+        margin-left: none;
+    }   
 }
 
 
 
 
 #container2{
-    display:block;
-    float: right;
-    text-align: center;
-    padding-left: 3px;
-    padding-right: 3px;
-    margin-top: 67px;
-    margin-right: 9px;
-    background-color: brown;
-    width: fit-content;
+display: block;
+font-size: 3vw;
+text-align: center;
+margin-left: none;
+padding-left: none;
+background-color: rgb(172, 86, 12);
+width: fit-content;
+padding-top: 3px;
+padding-bottom: 4px;
+padding-right: 3px;
+padding-left: 3px;
+margin-top: 83px;
+margin-left: 11px;
+color:rgb(65, 13, 109);
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
 
@@ -120,11 +221,14 @@ h1{
 #kilo{
     display: block;
     color:blueviolet;
+    text-align: center;
+    justify-content: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
     font-weight: bold;
     margin-top: 67px;
-    margin-left: 30px;
+    margin-right: 180px;
+    margin-left: 1px;
 }
 
 #mile{
@@ -135,34 +239,46 @@ h1{
     font-weight: bold;
     margin-top: 67px;
     margin-left: 50px;
+    text-align: center;
+    justify-content: center;
 }
 
 #miltokilo-container{
     display: block;
+    margin-top: 70px;
     justify-content: center;
-    float: left;
-    align-items: center;
     text-align: center;
+
+
 
     
 }
 
 
 
+
 #milestokilometer{
     display: block;
     padding-right: none;
-    padding-top:25px;
-    margin-right: none;
-    margin-left: 50px;
-    margin-top: 40px;
-    width: 180px;
-    height:70px;
+    padding-top: 30px;
+    margin-right: 50px;
+    margin-left: 13px;
+    margin-top: 30px;
+    padding-bottom: 40px;
+    width: 150px;
+    height:20px;
+    text-align: center;
+    justify-content: center;
     background-color: rgb(134, 249, 239);
     box-shadow: 0 0 9px rgb(166, 158, 149);
-    font-size: 30px;
-    font-style: auto;
+    font-size: 3vw;
     color: rgb(67, 61, 54);
+}
+
+@media screen  {
+    #milestokilometer{
+        margin-right: 200px;
+    }
 }
 
 #milestokilometer{
@@ -181,7 +297,8 @@ h1{
 }
 
 
-#kilometertomiles{
+#kilometertomile{
+
     animation-name: kilometertomiles;
     animation-duration: 1s;
 }
@@ -198,23 +315,23 @@ h1{
 
 
 #kilotomile-container{
-    display:block;
+    display: block;
     justify-content: center;
-    float: right;
-    align-items: center;
+    text-align: center;
 
 }
 
 #kilometertomiles{
     display: block;
-    padding-top: 25px;
-    margin-top: 40px;
-    margin-right: 30px; ;
-    width: 180px;
+    padding-top: 12px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 3vw;
+    margin-right: 30px;
     height:70px;
     background-color: brown;
     box-shadow: 0 0 9px rgb(57, 57, 67);
-    font-size: 30px;
     text-align: center;
     color:rgb(37, 35, 32)
 }
@@ -226,7 +343,7 @@ h1{
     justify-content: center;
     margin-top: 5vh;
     margin-right: 55px;
-    font-size: 15px;
+    font-size: 1vw;
     font-weight: bold;
     color: rgb(214, 122, 10);
     height: 60px;
@@ -237,14 +354,14 @@ h1{
 #btnkilo{
     display: block;
     justify-content: center;
-    margin-top: 5vh;
-    margin-right: 34px;
-    margin-left:80px ;
-    font-size: 15px;
+    margin-top: 25px;
+    margin-right: 10px;
+    margin-left: 20px ;
+    font-size: 1vw;
     font-weight: bold;
     color: rgb(83, 130, 13);
     height: 60px;
-    width:20vh ;
+    width: 20vh ;
     cursor: pointer;
 
 }
